@@ -37,6 +37,16 @@ In your markup, simply use the `protect_email` liquid filter made available thro
 {{ 'example@example.com' | protect_email }}
 ```
 
+The above code will yield `%65%78%61%6D%70%6C%65@%65%78%61%6D%70%6C%65.%63%6F%6D`. Only use this filter within the `href` attribute of a given link.
+
+## Example
+
+The following example shows how this plugin can be used to protect the `site`'s email address:
+
+```
+<a href="mailto:{{ site.email | protect_email }}" title="Contact me">Contact me</a>
+```
+
 # Contribute
 
 Fork this repository, make your changes and then issue a pull request. If you find bugs or have new ideas that you do not want to implement yourself, file a bug report.
