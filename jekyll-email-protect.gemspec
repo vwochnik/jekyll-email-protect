@@ -1,0 +1,19 @@
+Gem::Specification.new do |spec|
+  spec.name          = "jekyll-email-protect"
+  spec.version       = "1.0.0"
+  spec.authors       = ["Vincent Wochnik"]
+  spec.email         = ["v.wochnik@gmail.com"]
+  spec.description   = %q{Email protection liquid filter for Jekyll}
+  spec.summary       = %q{This plugin provides a simple liquid filter which converts emails into percent-encoded strings.}
+  spec.homepage      = "https://github.com/vwochnik/jekyll-email-protect"
+  spec.license       = "MIT"
+
+  spec.files         = ["lib/jekyll-email-protect.rb", "README.md", "LICENSE.md"]
+  spec.require_paths = ["lib"]
+
+  spec.add_runtime_dependency 'addressable', '>= 2.3.8'
+  spec.add_development_dependency 'jekyll', '~> 3.0'
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "bundler", "~> 1.6"
+end
