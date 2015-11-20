@@ -3,7 +3,7 @@ require 'addressable/uri'
 module JekyllEmailProtect
   module EmailProtectionFilter
     def protect_email(email)
-      Addressable::URI.encode_component(email, /[^\.@]/)
+      Addressable::URI.encode_component(email, /[^\.@\-+]/)
     end
   end
 end

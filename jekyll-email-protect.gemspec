@@ -9,11 +9,14 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = ["lib/jekyll-email-protect.rb", "README.md", "LICENSE.md"]
+  spec.test_files    = [*Dir["spec/*.rb"]]
   spec.require_paths = ["lib"]
 
+  spec.required_ruby_version = '>= 1.9.3'
   spec.add_runtime_dependency 'addressable', '>= 2.3.8'
   spec.add_development_dependency 'jekyll', '~> 3.0'
-  spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "webmock"
   spec.add_development_dependency "bundler", "~> 1.6"
 end
