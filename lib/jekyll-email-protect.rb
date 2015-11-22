@@ -1,9 +1,9 @@
-require 'addressable/uri'
-
 module JekyllEmailProtect
   module EmailProtectionFilter
-    def protect_email(email)
-      Addressable::URI.encode_component(email, /[^\.@\-+]/)
+    def protect_email(str)
+      return str if !str.ascii_only?
+
+      str.chars.map{ |c| c =~ /[\.\-+@]/ ? c : c.ord.to_s(16).upcase.rjust(2, '0').prepend('%') }.to_a.join
     end
   end
 end
