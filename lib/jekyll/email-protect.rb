@@ -4,7 +4,7 @@ module Jekyll
 
       # Percent-encode alphanumeric characters of an email address
       def encode_email(input)
-        input.to_s.chars.inject("") do |result, char|
+        input.to_s.chars.inject(String.new) do |result, char|
           if char =~ /\p{Alnum}/
             char.bytes.inject(result) do |result, byte|
               result << '%%%02X' % byte
