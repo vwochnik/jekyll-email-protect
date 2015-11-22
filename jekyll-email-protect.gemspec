@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/vwochnik/jekyll-email-protect"
   spec.license       = "MIT"
 
-  spec.files         = ["lib/jekyll-email-protect.rb", "README.md", "LICENSE.md"]
+  spec.files         = [*Dir["lib/**/*.rb"], "README.md", "LICENSE.md"]
   spec.test_files    = [*Dir["spec/*.rb"]]
   spec.require_paths = ["lib"]
 
