@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-email-protect"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Vincent Wochnik"]
   spec.email         = ["v.wochnik@gmail.com"]
   spec.description   = %q{Email protection liquid filter for Jekyll}

@@ -34,7 +34,7 @@ gems:
 In your markup, simply use the `protect_email` liquid filter made available through this plugin:
 
 ```
-{{ 'example@example.com' | protect_email }}
+{{ 'example@example.com' | encode_email }}
 ```
 
 The above code will yield `%65%78%61%6D%70%6C%65@%65%78%61%6D%70%6C%65.%63%6F%6D`. Only use this filter within the `href` attribute of a given link.
