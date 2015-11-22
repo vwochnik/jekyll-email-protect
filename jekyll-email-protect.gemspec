@@ -1,6 +1,11 @@
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'jekyll/email-protect/version'
+
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-email-protect"
-  spec.version       = "1.0.1"
+  spec.version       = Jekyll::EmailProtect::VERSION
   spec.authors       = ["Vincent Wochnik"]
   spec.email         = ["v.wochnik@gmail.com"]
   spec.description   = %q{Email protection liquid filter for Jekyll}

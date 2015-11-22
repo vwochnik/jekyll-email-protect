@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe(JekyllEmailProtect::EmailProtectionFilter) do
+describe(Jekyll::EmailProtect::EmailProtectionFilter) do
   let(:output) do
     render_liquid(content, {'email' => email})
   end

@@ -1,19 +1,7 @@
-module JekyllEmailProtect
-  module EmailProtectionFilter
-
-    # Percent-encode alphanumeric characters of an email address
-    def encode_email(input)
-      input.to_s.chars.inject("") do |result, char|
-        if char =~ /\p{Alnum}/
-          char.bytes.inject(result) do |result, byte|
-            result << '%%%02X' % byte
-          end
-        else
-          result << char
-        end
-      end
-    end
+module Jekyll
+  module EmailProtect
+    autoload :VERSION, 'jekyll/email-protect/version.rb'
   end
 end
 
-Liquid::Template.register_filter(JekyllEmailProtect::EmailProtectionFilter)
+require 'jekyll/email-protect.rb'
