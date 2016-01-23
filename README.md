@@ -57,4 +57,4 @@ Copyright (c) 2015 Vincent Wochnik.
 
 License: MIT
 
-[ruby-gem]: https://rubygems.org/gems/jekyll-language-plugin
+[ruby-gem]: https://rubygems.org/gems/jekyll-email-protect
