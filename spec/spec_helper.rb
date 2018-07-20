@@ -1,6 +1,6 @@
 TEST_DIR = File.dirname(__FILE__)
 
-require 'jekyll'
+require 'liquid'
 require File.expand_path("../lib/jekyll-email-protect.rb", TEST_DIR)
 
 RSpec.configure do |config|
