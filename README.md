@@ -25,7 +25,7 @@ $ gem install jekyll-email-protect
 After the plugin has been installed successfully, add the following lines to your `_config.yml` in order to tell Jekyll to use the plugin:
 
 ```
-gems:
+plugins:
 - jekyll-email-protect
 ```
 
