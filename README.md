@@ -4,6 +4,8 @@
 
 Jekyll Email Protect is an email protection liquid filter which can be used to obfuscate `mailto:` links to protect an email address from spam bots.
 
+ℹ️ See Jekyll Phone Protect [here](https://github.com/jacobfv/jekyll-phone-protect).
+
 ## Installation
 
 This plugin is available as a [RubyGem][ruby-gem].
